@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kodex", "kodex\kodex.csproj", "{00694697-994E-4559-99CB-0B66C7E2A60B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "kodex\Web.csproj", "{00694697-994E-4559-99CB-0B66C7E2A60B}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ApplicationCore", "ApplicationCore\ApplicationCore.shproj", "{AB704743-DB3F-4CBF-93C1-0455DD7E14DE}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Infrastructure", "Infrastructure\Infrastructure.shproj", "{6A7163C7-A8B4-468A-A4F1-9EFF4B567902}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Infrastructure\Infrastructure.projitems*{6a7163c7-a8b4-468a-a4f1-9eff4b567902}*SharedItemsImports = 13
+		ApplicationCore\ApplicationCore.projitems*{ab704743-db3f-4cbf-93c1-0455dd7e14de}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
