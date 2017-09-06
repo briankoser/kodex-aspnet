@@ -13,6 +13,13 @@ namespace kodex.Models
         public string Description { get; set; }
         public DateTime DatePublished { get; set; }
         public DateTime DateLastUpdated { get; set; }
+        public string FirstParagraph
+        {
+            get
+            {
+                return Body.Take(50).ToString();
+            }
+        }
 
         //public string Category { get; set; }
         //public List<string> Tags { get; set; }

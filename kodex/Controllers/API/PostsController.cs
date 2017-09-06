@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using kodex.Models;
+using kodex.Data;
 
 namespace kodex.Controllers.API
 {

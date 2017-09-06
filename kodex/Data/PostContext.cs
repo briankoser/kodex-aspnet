@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using kodex.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace kodex.Models
+namespace kodex.Data
 {
     public class PostContext : DbContext
     {
