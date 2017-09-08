@@ -25,5 +25,6 @@ namespace kodex.Models
         //public List<string> Tags { get; set; }
         //public List<string> Author { get; set; }
         //public string Via { get; set; }
+        //"links": [{"rel": "self", "href": "http://koser.us/article/2016/01/03/2/adulthood"}, {"rel": "allPrev", "href": "http://koser.us/article/2016/01/03/1/test-article"}, {"rel": "allNext", "href": "http://koser.us/note/2016/01/03/3/test-note"}, {"rel": "categoryPrev", "href": "http://koser.us/article/2016/01/03/1/test-article"}, {"rel": "categoryNext", "href": "http://koser.us/article/2016/01/03/4/test-article-two"}]}
     }
 }
