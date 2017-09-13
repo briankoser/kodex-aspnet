@@ -23,7 +23,7 @@ namespace kodex
                 var services = scope.ServiceProvider;
                 try
                 {
-                    var context = services.GetRequiredService<PostContext>();
+                    var context = services.GetRequiredService<StreamContext>();
                     DbInitializer.Initialize(context);
                 }
                 catch (Exception ex)

@@ -7,7 +7,7 @@ namespace kodex.Models
 {
     public class MovieReview : Post
     {
-        public string Rating { get; set; }
+        public int Rating { get; set; }
         public int ReleaseYear { get; set; }
         public string PosterUrl { get; set; }
         public DateTime ViewDate { get; set; }

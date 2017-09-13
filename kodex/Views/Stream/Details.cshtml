@@ -1,0 +1,209 @@
+﻿@model kodex.ViewModels.StreamViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StreamViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Body)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Body)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DatePublished)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DatePublished)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLastUpdated)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateLastUpdated)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BoardGameGeekId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BoardGameGeekId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BoxImageUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BoxImageUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAudioBook)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsAudioBook)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BookTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BookTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Isbn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Isbn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BookPubDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BookPubDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OpenLibraryUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OpenLibraryUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GoodreadsBookUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GoodreadsBookUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GoodreadsReviewUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GoodreadsReviewUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseYear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseYear)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PosterUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PosterUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ViewDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ViewDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TheMovieDbUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TheMovieDbUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LetterboxdMovieUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LetterboxdMovieUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LetterboxdReviewUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LetterboxdReviewUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Platform)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Platform)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NoteUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NoteUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BeginDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BeginDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CdnFolderUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CdnFolderUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CdnZipUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CdnZipUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Yield)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Yield)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VideoUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VideoUrl)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

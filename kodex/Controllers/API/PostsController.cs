@@ -14,9 +14,9 @@ namespace kodex.Controllers.API
     [Route("api/Posts")]
     public class PostsController : Controller
     {
-        private readonly PostContext _context;
+        private readonly StreamContext _context;
 
-        public PostsController(PostContext context)
+        public PostsController(StreamContext context)
         {
             _context = context;
         }
