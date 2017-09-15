@@ -30,7 +30,7 @@ namespace kodex.Controllers.API
 
         // GET: api/Posts/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetPost([FromRoute] long id)
+        public async Task<IActionResult> GetPost([FromRoute] Guid id)
         {
             if (!ModelState.IsValid)
             {
@@ -49,7 +49,7 @@ namespace kodex.Controllers.API
 
         // PUT: api/Posts/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPost([FromRoute] long id, [FromBody] Post post)
+        public async Task<IActionResult> PutPost([FromRoute] Guid id, [FromBody] Post post)
         {
             if (!ModelState.IsValid)
             {
@@ -99,7 +99,7 @@ namespace kodex.Controllers.API
 
         // DELETE: api/Posts/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePost([FromRoute] long id)
+        public async Task<IActionResult> DeletePost([FromRoute] Guid id)
         {
             if (!ModelState.IsValid)
             {
@@ -118,7 +118,7 @@ namespace kodex.Controllers.API
             return Ok(post);
         }
 
-        private bool PostExists(long id)
+        private bool PostExists(Guid id)
         {
             return _context.Posts.Any(e => e.Id == id);
         }

@@ -10,12 +10,12 @@ namespace kodex.ViewModels
     public class StreamViewModel
     {
         // Post
-        public long Id { get; set; }
+        public Guid Id { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
         public string Description { get; set; }
-        public DateTime DatePublished { get; set; }
-        public DateTime DateLastUpdated { get; set; }
+        public DateTimeOffset DatePublished { get; set; }
+        public DateTimeOffset DateLastUpdated { get; set; }
         public string FirstParagraph
         {
             get

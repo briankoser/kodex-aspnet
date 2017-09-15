@@ -26,7 +26,7 @@ namespace kodex.Controllers
         }
 
         // GET: Stream/Details/5
-        public async Task<IActionResult> Details(long? id)
+        public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
             {
@@ -43,7 +43,7 @@ namespace kodex.Controllers
             return View(streamViewModel);
         }
 
-        private bool StreamViewModelExists(long id)
+        private bool StreamViewModelExists(Guid id)
         {
             return _context.StreamViewModels.Any(e => e.Id == id);
         }
