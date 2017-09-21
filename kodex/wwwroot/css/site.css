@@ -10,6 +10,7 @@
 :root {
     --primary-color: #f44336;
     --secondary-color: #2196F3;
+    --orange: #e67e22;
 }
 
 /*****************************************************************************
@@ -124,6 +125,10 @@ body {
     stroke: currentColor;
     stroke-width: 0;
     width: 2em;
+}
+
+.icon-book {
+    fill: var(--orange);
 }
 
 
