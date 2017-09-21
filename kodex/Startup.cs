@@ -44,6 +44,24 @@ namespace kodex
 
             app.UseMvc(routes =>
             {
+                //routes.MapRoute(
+                //    name: "author",
+                //    template: "{author}/{category}/{year}/{month}/{day}/{count}/{slug}",
+                //    defaults: new { controller = "stream", action = "author" });
+
+                //routes.MapRoute(
+                //    name: "category",
+                //    template: "{category}/{year}/{month}/{day}/{count}/{slug}",
+                //    defaults: new { controller = "stream" });
+
+                //   /2016/04/05/1 - will be expanded to /{category}/2016/04/05/1/optional-slug; id is base 60 digit count of post from that day
+                /// SSSn - short url expands to full url, all characters are base 60
+
+                routes.MapRoute(
+                    name: "stream",
+                    template: "{year:int}/{month:range(1,12)}/{day:range(1,31)}/{id}/{slug?}",
+                    defaults: new { controller = "stream" });
+                
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");

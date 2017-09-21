@@ -1,6 +1,7 @@
 ﻿using kodex.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,18 +10,21 @@ namespace kodex.ViewModels
 {
     public class StreamViewModel
     {
+
+
         // Post
         public Guid Id { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
         public string Description { get; set; }
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTimeOffset DatePublished { get; set; }
         public DateTimeOffset DateLastUpdated { get; set; }
-        public string FirstParagraph
+        public string Excerpt
         {
             get
             {
-                return Body.Take(50).ToString();
+                return String.Join(" ", Body.Split().Take(50).ToArray());
             }
         }
 
@@ -34,9 +38,10 @@ namespace kodex.ViewModels
         // Book Review
         public bool IsAudioBook { get; set; }
         public string BookTitle { get; set; }
-        public string Author { get; set; }
+        public string BookAuthor { get; set; }
         public string Isbn { get; set; }
         public DateTime BookPubDate { get; set; }
+        public string BookCoverUrl { get; set; }
         public string OpenLibraryUrl { get; set; }
         public string GoodreadsBookUrl { get; set; }
         public string GoodreadsReviewUrl { get; set; }
@@ -112,7 +117,7 @@ namespace kodex.ViewModels
             Rating = bookReview.Rating;
             IsAudioBook = bookReview.IsAudioBook;
             BookTitle = bookReview.BookTitle;
-            Author = bookReview.Author;
+            BookAuthor = bookReview.Author;
             Isbn = bookReview.Isbn;
             BookPubDate = bookReview.BookPubDate;
             OpenLibraryUrl = bookReview.OpenLibraryUrl;
