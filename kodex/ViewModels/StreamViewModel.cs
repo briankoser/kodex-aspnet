@@ -10,8 +10,6 @@ namespace kodex.ViewModels
 {
     public class StreamViewModel
     {
-
-
         // Post
         public Guid Id { get; set; }
         public string Title { get; set; }
@@ -32,7 +30,7 @@ namespace kodex.ViewModels
         public int Rating { get; set; }
 
         // Board Game Review
-        public string BoardGameGeekId { get; set; }
+        public string BoardGameGeekGameId { get; set; }
         public string BoxImageUrl { get; set; }
 
         // Book Review
@@ -40,7 +38,7 @@ namespace kodex.ViewModels
         public string BookTitle { get; set; }
         public string BookAuthor { get; set; }
         public string Isbn { get; set; }
-        public DateTime BookPubDate { get; set; }
+        public DateTime BookDatePublished { get; set; }
         public string BookCoverUrl { get; set; }
         public string OpenLibraryUrl { get; set; }
         public string GoodreadsBookUrl { get; set; }
@@ -49,11 +47,10 @@ namespace kodex.ViewModels
         // Movie Review
         public int ReleaseYear { get; set; }
         public string PosterUrl { get; set; }
-        public DateTime ViewDate { get; set; }
+        public DateTime DateViewed { get; set; }
         public string TheMovieDbUrl { get; set; }
         public string LetterboxdMovieUrl { get; set; }
         public string LetterboxdReviewUrl { get; set; }
-        public string Platform { get; set; }
 
         // Note
         public string Image { get; set; }
@@ -101,7 +98,7 @@ namespace kodex.ViewModels
             DateLastUpdated = boardGameReview.DateLastUpdated;
 
             Rating = boardGameReview.Rating;
-            BoardGameGeekId = boardGameReview.BoardGameGeekId;
+            BoardGameGeekGameId = boardGameReview.BoardGameGeekGameId;
             BoxImageUrl = boardGameReview.BoxImageUrl;
         }
 
@@ -119,7 +116,7 @@ namespace kodex.ViewModels
             BookTitle = bookReview.BookTitle;
             BookAuthor = bookReview.Author;
             Isbn = bookReview.Isbn;
-            BookPubDate = bookReview.BookPubDate;
+            BookDatePublished = bookReview.BookDatePublished;
             OpenLibraryUrl = bookReview.OpenLibraryUrl;
             GoodreadsBookUrl = bookReview.GoodreadsBookUrl;
             GoodreadsReviewUrl = bookReview.GoodreadsReviewUrl;
@@ -137,7 +134,7 @@ namespace kodex.ViewModels
             Rating = movieReview.Rating;
             ReleaseYear = movieReview.ReleaseYear;
             PosterUrl = movieReview.PosterUrl;
-            ViewDate = movieReview.ViewDate;
+            DateViewed = movieReview.DateViewed;
             TheMovieDbUrl = movieReview.TheMovieDbUrl;
             LetterboxdMovieUrl = movieReview.LetterboxdMovieUrl;
             LetterboxdReviewUrl = movieReview.LetterboxdReviewUrl;

@@ -16,9 +16,9 @@ namespace kodex.Models
         public string Body { get; set; }
         public string Description { get; set; }
         public DateTimeOffset DatePublished { get; set; }
+        public int DatePublishedId { get; set; }
         public DateTimeOffset DateLastUpdated { get; set; }
         public bool IsPublic { get; set; }
-        public bool IsDeleted { get; set; }
 
         public string Slug
         {

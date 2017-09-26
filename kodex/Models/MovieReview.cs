@@ -10,10 +10,10 @@ namespace kodex.Models
         public int Rating { get; set; }
         public int ReleaseYear { get; set; }
         public string PosterUrl { get; set; }
-        public DateTime ViewDate { get; set; }
+        public DateTime DateViewed { get; set; }
         public string TheMovieDbUrl { get; set; }
         public string LetterboxdMovieUrl { get; set; }
         public string LetterboxdReviewUrl { get; set; }
-        public string Platform { get; set; } // create platform table
+        //public string Platform { get; set; } // create platform table
     }
 }

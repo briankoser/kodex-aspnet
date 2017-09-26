@@ -8,7 +8,7 @@ namespace kodex.Models
     public class BoardGameReview : Post
     {
         public int Rating { get; set; }
-        public string BoardGameGeekId { get; set; }
+        public string BoardGameGeekGameId { get; set; }
         public string BoxImageUrl { get; set; }
     }
 }

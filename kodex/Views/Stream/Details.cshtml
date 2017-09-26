@@ -17,7 +17,7 @@
             <img src="@Model.BookCoverUrl" alt="@Model.BookTitle cover" />
             <a href="@Html.DisplayFor(model => model.GoodreadsBookUrl)">@Html.DisplayFor(model => model.BookTitle)</a>
             @Html.DisplayFor(model => model.BookAuthor)
-            @Html.DisplayFor(model => model.BookPubDate)
+            @Html.DisplayFor(model => model.BookDatePublished)
         }
 
         @Html.DisplayFor(modelItem => Model.Body)

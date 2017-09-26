@@ -11,7 +11,7 @@ namespace kodex.Models
         public string BookTitle { get; set; }
         public string Author { get; set; }
         public string Isbn { get; set; }
-        public DateTime BookPubDate { get; set; }
+        public DateTime BookDatePublished { get; set; }
         public string BookCoverUrl { get; set; }
         public string OpenLibraryUrl { get; set; }
         public string GoodreadsBookUrl { get; set; }
