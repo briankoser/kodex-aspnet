@@ -19,14 +19,8 @@ namespace kodex.Models
         public int DatePublishedId { get; set; }
         public DateTimeOffset DateLastUpdated { get; set; }
         public bool IsPublic { get; set; }
-
-        public string Slug
-        {
-            get
-            {
-                return Title.ToLower().Replace(" ", "-");
-            }
-        }
+        public string Slug { get; set; }
+        public string ShortCode { get; set; }
 
         public string Excerpt
         {
